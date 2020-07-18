@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_hoe",
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "name": "random",
+                  "attribute": "random",
+                  "operation": "addition",
+                  "slot": "mainhand",
+                  "amount": {
+                    "type": "minecraft:uniform",
+                    "min": -2147483648,
+                    "max": 2147483647
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
